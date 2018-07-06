@@ -18,7 +18,8 @@ export class CockpitComponent implements OnInit {
   }
 
   onAddServer(serverNameInput, HTMLInputElement) {
-    // console.log(serverNameInput.value)
+    // console.log(serverNameInput.value);
+    // console.log(this.serverContentInput);
     this.serverCreated.emit({
       serverName: serverNameInput.value,
       serverContent: this.serverContentInput.nativeElement.value,
@@ -26,7 +27,7 @@ export class CockpitComponent implements OnInit {
   }
 
   onAddBlueprint(serverNameInput, HTMLInputElement) {
-    console.log(serverNameInput.value)
+    // console.log(serverNameInput.value)
     this.blueprintCreated.emit({
       serverName: serverNameInput.value,
       serverContent: this.serverContentInput.nativeElement.value,
